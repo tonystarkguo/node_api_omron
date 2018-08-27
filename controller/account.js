@@ -66,7 +66,7 @@ function componenteEmployInfo(req, res) {
     });
 }
 function exportFile(req,res){
-    var path = "D:/Workspace/node_api/controller/input.text";
+    var path = "./controller/input.text";
     var f = fs.createReadStream(path);
     res.writeHead(200, {
         'Content-Type': 'application/octet-stream',
