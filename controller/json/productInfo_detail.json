@@ -1,0 +1,18 @@
+{
+  "productInfo": null,
+  "componenteEmployInfo": null,
+  "componentBatchNoInfo": [
+    {
+      "product_serial_no": "111",
+      "production_process": "111",
+      "is_pass": "PASS",
+      "start_time": "2018-08-27",
+      "date_time": "2018-08-27",
+      "time_difference": "23"
+    }
+  ],
+  "pagingParamEnyity": null,
+  "count_row": 99999,
+  "count": 0,
+  "erro": false
+}

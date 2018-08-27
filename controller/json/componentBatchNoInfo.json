@@ -1,0 +1,21 @@
+{
+    "componenteEmployInfo": [
+      {
+        "cb_id": "ss",
+        "date_time": "2018-08-29",
+        "ib_id": "1234",
+        "item_id": "3.5G",
+        "pim_id": "QWE",
+        "pm_id": "DEV",
+        "product_batch_no": "12",
+        "product_serial_no": "12",
+        "trace_no": "32",
+        "work_order_no": "123",
+        "item": "3.5G"
+      }
+    ],
+    "productInfo": null,
+    "count_row": 99999,
+    "count": 0,
+    "erro": false
+  }
