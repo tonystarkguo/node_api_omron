@@ -7,7 +7,10 @@ exports.productInfo = productInfo;
 exports.componenteEmployInfo = componenteEmployInfo;
 exports.exportFile = exportFile;
 exports.componenteEmployInfo_detail =componenteEmployInfo_detail
-exports.componentBatchNoInfo = componentBatchNoInfo
+exports.componentBatchNoInfo = componentBatchNoInfo;
+
+exports.login = login;
+exports.index = index;
 
 var types=require('./types.js').types;
 function userById(req, res) {
@@ -149,6 +152,51 @@ function componenteEmployInfo_detail(req, res) {
 function componentBatchNoInfo(req, res) {
 
     fs.readFile('./controller/json/componentBatchNoInfo.json', "utf-8", function (err, data) {
+        if (err) {
+            return console.error(err);
+        }
+        // console.log("异步读取: " + data.toString());
+        var fileType = types;
+        res.setHeader('Content-Type', 'application/json;charset=utf-8')
+        res.setHeader("Access-Control-Allow-Origin", "*");
+        res.setHeader("Access-Control-Allow-Headers", "X-Requested-With,Origin,Content-Type,Accept");
+        res.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
+        res.end(data.toString());
+    });
+}
+
+
+/* 登录页面显示内容 */
+function login(req, res){
+    fs.readFile('./controller/json/login.json', "utf-8", function (err, data) {
+        if (err) {
+            return console.error(err);
+        }
+        // console.log("异步读取: " + data.toString());
+        var fileType = types;
+        res.setHeader('Content-Type', 'application/json;charset=utf-8')
+        res.setHeader("Access-Control-Allow-Origin", "*");
+        res.setHeader("Access-Control-Allow-Headers", "X-Requested-With,Origin,Content-Type,Accept");
+        res.setHeader("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
+        res.end(data.toString());
+    });
+}
+
+function index(req, res){
+    var post = '';
+
+    // // 通过req的data事件监听函数，每当接受到请求体的数据，就累加到post变量中
+    // req.on('data', function (chunk) {
+    //     post += chunk;
+    // });
+    // // 在end事件触发后，通过querystring.parse将post解析为真正的POST请求格式，然后向客户端返回。
+    // req.on('end', function () {
+    //     console.log(post)
+    //     // post = querystring.parse(post);
+    //     // console.log(util.inspect(post))
+
+    // });
+    fs.readFile('./controller/json/indexSet.json', "utf-8", function (err, data) {
         if (err) {
             return console.error(err);
         }

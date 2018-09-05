@@ -31,6 +31,16 @@ exports = module.exports = [{
         path: '/extend/productInfo/productInfo_detail.do',
         impl: 'account.componenteEmployInfo_detail'
     },
+    {
+        method: 'POST',
+        path: '/extend/index/login.do',
+        impl: 'account.login'
+    },
+    {
+        method: 'POST',
+        path: '/extend/index/index.do',
+        impl: 'account.index'
+    },
     
    
 ];
