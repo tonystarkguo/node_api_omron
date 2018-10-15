@@ -1,37 +1,5 @@
 {
     "erro": false,
-    "targetTimeProduction": {
-        "item_id": "3.5G",
-        "date_time": "",
-        "date_point_8": "5",
-        "date_point_10": "5",
-        "date_point_12": "5",
-        "date_point_14": "5",
-        "date_point_16": "5",
-        "date_point_18": "5",
-        "date_point_20": "5",
-        "date_point_22": "5",
-        "date_point_24": "5",
-        "date_point_2": "5",
-        "date_point_4": "5",
-        "date_point_6": "5",
-        "product_count": "60"
-    },
-    "realTimeProduction": {
-        "item_id": "3.5G",
-        "date_time": "2018-09-04",
-        "date_point_8": "5",
-        "date_point_10": "5",
-        "date_point_12": "5",
-        "date_point_14": "5",
-        "date_point_16": "5",
-        "date_point_18": "5",
-        "date_point_20": "5",
-        "date_point_22": "5",
-        "date_point_24": "5",
-        "date_point_2": "5",
-        "date_point_4": "5",
-        "date_point_6": "5",
-        "product_count": "60"
-    }
+    "targetTimeProduction":null,
+    "realTimeProduction":null
 }
